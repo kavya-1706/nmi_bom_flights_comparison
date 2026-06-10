@@ -1,0 +1,99 @@
+,Departure_Time,Arrival_Time,Airline,Duration,Route,Stops,Layover_Time_Location,CO2_Emissions,Emissions_Change,Price,Class
+0,8:00 AM, 2:50 PM,IndiGo,6 hr 50 min,NMI–BLR,1 stop,3 hr 50 min KLH,88 kg CO2e,+28% emissions,"₹6,073",economy
+1,11:05 AM, 8:55 PM,IndiGo,9 hr 50 min,NMI–BLR,1 stop,6 hr 50 min GOI,92 kg CO2e,+33% emissions,"₹6,937",economy
+2,11:05 AM, 3:45 PM,IndiGo,4 hr 40 min,NMI–BLR,1 stop,1 hr 50 min GOI,92 kg CO2e,+33% emissions,"₹8,086",economy
+17,7:15 PM, 11:00 PM,IndiGo,3 hr 45 min,BLR–NMI,1 stop,1 hr 20 min GOI,91 kg CO2e,+32% emissions,"₹6,005",economy
+18,5:40 PM, 11:00 PM,IndiGo,5 hr 20 min,BLR–NMI,1 stop,2 hr 50 min GOI,91 kg CO2e,+32% emissions,"₹6,005",economy
+19,3:15 PM, 11:00 PM,IndiGo,7 hr 45 min,BLR–NMI,1 stop,5 hr 10 min GOI,91 kg CO2e,+32% emissions,"₹9,090",economy
+20,12:35 PM, 6:55 PM,IndiGo,6 hr 20 min,BLR–NMI,1 stop,3 hr 35 min GOI,92 kg CO2e,+33% emissions,"₹10,885",economy
+21,12:35 PM, 11:00 PM,IndiGo,10 hr 25 min,BLR–NMI,1 stop,7 hr 55 min GOI,91 kg CO2e,+32% emissions,"₹10,885",economy
+39,2:45 PM, 7:10 PM,IndiGo,4 hr 25 min,NMI–MAA,1 stop,1 hr 55 min HYD,109 kg CO2e,+35% emissions,"₹6,514",economy
+40,11:25 AM, 9:25 PM,IndiGo,10 hr,NMI–MAA,1 stop,7 hr 10 min BLR,110 kg CO2e,+36% emissions,"₹5,958",economy
+41,11:25 AM, 6:10 PM,IndiGo,6 hr 45 min,NMI–MAA,1 stop,4 hr 5 min BLR,107 kg CO2e,+32% emissions,"₹7,627",economy
+43,7:05 AM, 10:55 AM,IndiGo,3 hr 50 min,MAA–NMI,1 stop,1 hr 15 min BLR,111 kg CO2e,+39% emissions,"₹5,752",economy
+44,4:10 PM, 10:35 PM,IndiGo,6 hr 25 min,MAA–NMI,1 stop,3 hr 40 min HYD,113 kg CO2e,+41% emissions,"₹8,239",economy
+45,12:00 PM, 6:10 PM,IndiGo,6 hr 10 min,MAA–NMI,1 stop,3 hr 25 min HYD,113 kg CO2e,+41% emissions,"₹8,614",economy
+46,10:55 AM, 4:40 PM,IndiGo,5 hr 45 min,MAA–NMI,1 stop,3 hr BLR,107 kg CO2e,+34% emissions,"₹8,885",economy
+48,4:20 PM, 10:15 PM,IndiGo,5 hr 55 min,NMI–DEL,1 stop,3 hr 20 min BDQ,112 kg CO2e,+10% emissions,"₹6,811",economy
+49,6:25 PM, 11:25 PM,IndiGo,5 hr,NMI–DEL,1 stop,2 hr 10 min JAI,108 kg CO2e,+6% emissions,"₹6,811",economy
+50,9:10 PM, 2:00 AM+1,IndiGo,4 hr 50 min,NMI–DEL,1 stop,1 hr 25 min AMD,111 kg CO2e,+9% emissions,"₹7,193",economy
+51,7:40 AM, 12:50 PM,IndiGo,5 hr 10 min,DEL–NMI,1 stop,2 hr 25 min JAI,108 kg CO2e,Avg emissions,"₹6,678",economy
+52,2:50 PM, 8:40 PM,IndiGo,5 hr 50 min,DEL–NMI,1 stop,2 hr 50 min AMD,109 kg CO2e,+6% emissions,"₹7,255",economy
+55,2:45 PM, 11:25 PM,IndiGo,8 hr 40 min,NMI–CCU,1 stop,5 hr 15 min HYD,150 kg CO2e,+28% emissions,"₹6,717",economy
+56,2:45 PM, 8:05 PM,IndiGo,5 hr 20 min,NMI–CCU,1 stop,1 hr 55 min HYD,150 kg CO2e,+28% emissions,"₹9,745",economy
+58,10:55 AM, 6:10 PM,IndiGo,7 hr 15 min,CCU–NMI,1 stop,3 hr 25 min HYD,150 kg CO2e,+29% emissions,"₹9,980",economy
+59,5:00 PM, 10:35 PM,IndiGo,5 hr 35 min,CCU–NMI,1 stop,1 hr 50 min HYD,150 kg CO2e,+29% emissions,"₹9,980",economy
+60,11:25 AM, 3:35 PM,IndiGo,4 hr 10 min,NMI–COK,1 stop,1 hr 15 min BLR,112 kg CO2e,+40% emissions,"₹6,447",economy
+61,7:05 AM, 11:30 AM,IndiGo,4 hr 25 min,NMI–COK,1 stop,1 hr 50 min BLR,108 kg CO2e,+35% emissions,"₹7,426",economy
+62,7:05 AM, 10:55 AM,IndiGo,3 hr 50 min,COK–NMI,1 stop,1 hr BLR,118 kg CO2e,+40% emissions,"₹5,746",economy
+63,12:00 PM, 4:40 PM,IndiGo,4 hr 40 min,COK–NMI,1 stop,1 hr 45 min BLR,113 kg CO2e,+35% emissions,"₹5,746",economy
+65,6:25 AM, 3:00 PM,IndiGo,8 hr 35 min,NMI–IXC,1 stop,5 hr 35 min DEL,121 kg CO2e,Avg emissions,"₹8,468",economy
+89,6:30 AM, 11:55 AM,IndiGo,5 hr 25 min,IXC–NMI,1 stop,2 hr 30 min DEL,122 kg CO2e,+17% emissions,"₹8,180",economy
+90,3:30 PM, 10:05 PM,IndiGo,6 hr 35 min,IXC–NMI,1 stop,3 hr 30 min DEL,127 kg CO2e,+22% emissions,"₹8,180",economy
+91,4:50 PM, 10:05 PM,IndiGo,5 hr 15 min,IXC–NMI,1 stop,2 hr 10 min DEL,127 kg CO2e,+22% emissions,"₹8,180",economy
+92,7:55 AM, 12:50 PM,IndiGo,4 hr 55 min,IXC–NMI,1 stop,1 hr 50 min JAI,118 kg CO2e,+13% emissions,"₹8,547",economy
+93,1:55 PM, 8:40 PM,IndiGo,6 hr 45 min,IXC–NMI,1 stop,3 hr 35 min AMD,128 kg CO2e,+23% emissions,"₹8,547",economy
+110,7:05 AM, 2:10 PM,IndiGo,7 hr 5 min,NMI–CJB,1 stop,4 hr 35 min BLR,101 kg CO2e,+26% emissions,"₹6,533",economy
+111,11:25 AM, 8:55 PM,IndiGo,9 hr 30 min,NMI–CJB,1 stop,6 hr 45 min BLR,105 kg CO2e,+31% emissions,"₹6,533",economy
+112,11:25 AM, 5:10 PM,IndiGo,5 hr 45 min,NMI–CJB,1 stop,3 hr BLR,104 kg CO2e,+30% emissions,"₹7,545",economy
+113,7:05 AM, 5:10 PM,IndiGo,10 hr 5 min,NMI–CJB,1 stop,7 hr 35 min BLR,99 kg CO2e,+24% emissions,"₹7,821",economy
+136,3:15 PM, 11:00 PM,IndiGo,7 hr 45 min,CJB–NMI,1 stop,4 hr 40 min GOI,101 kg CO2e,+20% emissions,"₹6,717",economy
+137,8:30 AM, 4:40 PM,IndiGo,8 hr 10 min,CJB–NMI,1 stop,5 hr 30 min BLR,107 kg CO2e,+27% emissions,"₹6,822",economy
+157,9:10 PM, 8:00 AM+1,IndiGo,10 hr 50 min,NMI–JAI,1 stop,7 hr 35 min AMD,97 kg CO2e,+15% emissions,"₹8,623",economy
+169,1:30 PM, 8:40 PM,IndiGo,7 hr 10 min,JAI–NMI,1 stop,4 hr 5 min AMD,98 kg CO2e,+15% emissions,"₹7,301",economy
+170,7:10 PM, 11:35 PM,IndiGo,4 hr 25 min,NMI–TRV,1 stop,1 hr 25 min HYD,139 kg CO2e,Avg emissions,"₹8,197",economy
+171,7:05 AM, 11:50 AM,IndiGo,4 hr 45 min,NMI–TRV,1 stop,1 hr 55 min BLR,117 kg CO2e,-20% emissions,"₹10,169",economy
+173,7:35 AM, 6:10 PM,IndiGo,10 hr 35 min,TRV–NMI,1 stop,7 hr 15 min HYD,139 kg CO2e,+43% emissions,"₹10,567",economy
+174,5:55 PM, 10:35 PM,IndiGo,4 hr 40 min,TRV–NMI,1 stop,1 hr 30 min HYD,134 kg CO2e,+38% emissions,"₹10,567",economy
+175,12:20 PM, 4:40 PM,IndiGo,4 hr 20 min,TRV–NMI,1 stop,1 hr 25 min BLR,123 kg CO2e,+27% emissions,"₹23,177",economy
+177,12:40 PM, 7:20 PM,IndiGo,6 hr 40 min,NMI–IXR,1 stop,3 hr 25 min PAT,154 kg CO2e,+57% emissions,"₹7,143",economy
+178,6:25 AM, 12:45 PM,IndiGo,6 hr 20 min,NMI–PAT,1 stop,2 hr 35 min DEL,172 kg CO2e,+55% emissions,"₹7,670",economy
+179,2:45 PM, 9:00 PM,IndiGo,6 hr 15 min,NMI–PAT,1 stop,3 hr 5 min HYD,152 kg CO2e,+37% emissions,"₹7,670",economy
+181,6:05 PM, 10:35 PM,IndiGo,4 hr 30 min,PAT–NMI,1 stop,1 hr HYD,155 kg CO2e,+40% emissions,"₹8,786",economy
+182,3:10 PM, 10:15 PM,IndiGo,7 hr 5 min,PAT–NMI,1 stop,3 hr 50 min LKO,142 kg CO2e,+28% emissions,"₹8,655",economy
+183,8:30 AM, 6:10 PM,IndiGo,9 hr 40 min,PAT–NMI,1 stop,6 hr HYD,155 kg CO2e,+40% emissions,"₹8,786",economy
+185,1:40 PM, 6:10 PM,IndiGo,4 hr 30 min,GOX–NMI,1 stop,1 hr 35 min HYD,108 kg CO2e,+135% emissions,"₹5,542",economy
+187,7:05 AM, 8:35 AM,IndiGo,1 hr 30 min,NMI–BLR,Nonstop,0 minutes,67 kg CO2e,Avg emissions,"₹5,114",economy
+188,11:25 AM, 1:10 PM,IndiGo,1 hr 45 min,NMI–BLR,Nonstop,0 minutes,71 kg CO2e,Avg emissions,"₹5,114",economy
+190,9:20 AM, 10:55 AM,IndiGo,1 hr 35 min,BLR–NMI,Nonstop,0 minutes,71 kg CO2e,Avg emissions,"₹5,718",economy
+191,3:00 PM, 4:40 PM,IndiGo,1 hr 40 min,BLR–NMI,Nonstop,0 minutes,71 kg CO2e,Avg emissions,"₹6,492",economy
+194,7:05 AM, 8:50 AM,IndiGo,1 hr 45 min,NMI–MAA,Nonstop,0 minutes,79 kg CO2e,Avg emissions,"₹5,825",economy
+195,9:15 PM, 11:00 PM,IndiGo,1 hr 45 min,MAA–NMI,Nonstop,0 minutes,79 kg CO2e,Avg emissions,"₹6,175",economy
+196,9:50 AM, 12:10 PM,Akasa Air,2 hr 20 min,NMI–DEL,Nonstop,0 minutes,91 kg CO2e,-11% emissions,"₹6,819",economy
+197,2:15 PM, 4:15 PM,IndiGo,2 hr,NMI–DEL,Nonstop,0 minutes,86 kg CO2e,-16% emissions,"₹7,164",economy
+198,5:20 PM, 7:15 PM,IndiGo,1 hr 55 min,NMI–DEL,Nonstop,0 minutes,92 kg CO2e,-10% emissions,"₹7,164",economy
+199,6:25 AM, 8:35 AM,IndiGo,2 hr 10 min,NMI–DEL,Nonstop,0 minutes,86 kg CO2e,-16% emissions,"₹7,374",economy
+202,6:50 AM, 9:00 AM,Akasa Air,2 hr 10 min,DEL–NMI,Nonstop,0 minutes,91 kg CO2e,-12% emissions,"₹6,492",economy
+203,7:05 AM, 9:05 AM,IndiGo,2 hr,DEL–NMI,Nonstop,0 minutes,86 kg CO2e,-17% emissions,"₹7,131",economy
+204,9:55 AM, 11:55 AM,IndiGo,2 hr,DEL–NMI,Nonstop,0 minutes,86 kg CO2e,-17% emissions,"₹7,131",economy
+205,8:00 PM, 10:05 PM,IndiGo,2 hr 5 min,DEL–NMI,Nonstop,0 minutes,92 kg CO2e,-11% emissions,"₹7,131",economy
+208,11:00 AM, 12:25 PM,IndiGo,1 hr 25 min,NMI–IXE,Nonstop,0 minutes,65 kg CO2e,Avg emissions,"₹6,213",economy
+209,1:45 PM, 3:15 PM,IndiGo,1 hr 30 min,NMI–IXE,Nonstop,0 minutes,65 kg CO2e,Avg emissions,"₹6,213",economy
+210,3:05 PM, 4:30 PM,IndiGo,1 hr 25 min,NMI–IXE,Nonstop,0 minutes,65 kg CO2e,Avg emissions,"₹6,213",economy
+211,11:10 AM, 12:35 PM,IndiGo,1 hr 25 min,IXE–NMI,Nonstop,0 minutes,65 kg CO2e,Avg emissions,"₹5,910",economy
+212,12:55 PM, 2:20 PM,IndiGo,1 hr 25 min,IXE–NMI,Nonstop,0 minutes,65 kg CO2e,Avg emissions,"₹5,910",economy
+213,5:00 PM, 6:30 PM,IndiGo,1 hr 30 min,IXE–NMI,Nonstop,0 minutes,65 kg CO2e,Avg emissions,"₹5,910",economy
+214,2:45 PM, 4:00 PM,IndiGo,1 hr 15 min,NMI–HYD,Nonstop,0 minutes,59 kg CO2e,Avg emissions,"₹4,294",economy
+215,7:10 PM, 8:25 PM,IndiGo,1 hr 15 min,NMI–HYD,Nonstop,0 minutes,59 kg CO2e,Avg emissions,"₹4,294",economy
+216,4:40 PM, 6:10 PM,IndiGo,1 hr 30 min,HYD–NMI,Nonstop,0 minutes,59 kg CO2e,Avg emissions,"₹4,393",economy
+217,9:05 PM, 10:35 PM,IndiGo,1 hr 30 min,HYD–NMI,Nonstop,0 minutes,59 kg CO2e,Avg emissions,"₹4,393",economy
+218,6:05 AM, 8:25 AM,IndiGo,2 hr 20 min,NMI–CCU,Nonstop,0 minutes,123 kg CO2e,Avg emissions,"₹7,483",economy
+219,7:40 AM, 10:15 AM,IndiGo,2 hr 35 min,CCU–NMI,Nonstop,0 minutes,123 kg CO2e,+6% emissions,"₹8,010",economy
+220,11:30 AM, 1:30 PM,Akasa Air,2 hr,NMI–COK,Nonstop,0 minutes,81 kg CO2e,Avg emissions,"₹6,353",economy
+221,7:50 PM, 9:40 PM,IndiGo,1 hr 50 min,NMI–COK,Nonstop,0 minutes,86 kg CO2e,+8% emissions,"₹6,853",economy
+222,8:50 AM, 10:50 AM,Akasa Air,2 hr,COK–NMI,Nonstop,0 minutes,81 kg CO2e,Avg emissions,"₹5,445",economy
+223,1:50 PM, 3:40 PM,IndiGo,1 hr 50 min,COK–NMI,Nonstop,0 minutes,86 kg CO2e,Avg emissions,"₹6,130",economy
+224,4:50 PM, 7:00 PM,IndiGo,2 hr 10 min,NMI–IXC,Nonstop,0 minutes,105 kg CO2e,-18% emissions,"₹7,898",economy
+225,7:35 PM, 10:00 PM,IndiGo,2 hr 25 min,IXC–NMI,Nonstop,0 minutes,105 kg CO2e,Avg emissions,"₹7,849",economy
+226,5:15 AM, 7:00 AM,IndiGo,1 hr 45 min,NMI–CJB,Nonstop,0 minutes,82 kg CO2e,Avg emissions,"₹5,851",economy
+227,7:40 AM, 9:40 AM,IndiGo,2 hr,CJB–NMI,Nonstop,0 minutes,82 kg CO2e,Avg emissions,"₹6,352",economy
+228,6:25 PM, 8:15 PM,IndiGo,1 hr 50 min,NMI–JAI,Nonstop,0 minutes,73 kg CO2e,-13% emissions,"₹6,095",economy
+229,11:05 AM, 12:50 PM,IndiGo,1 hr 45 min,JAI–NMI,Nonstop,0 minutes,73 kg CO2e,-14% emissions,"₹6,174",economy
+230,12:40 PM, 3:00 PM,IndiGo,2 hr 20 min,NMI–PAT,Nonstop,0 minutes,110 kg CO2e,Avg emissions,"₹8,138",economy
+231,9:35 PM, 12:10 AM+1,IndiGo,2 hr 35 min,PAT–NMI,Nonstop,0 minutes,110 kg CO2e,Avg emissions,"₹8,840",economy
+232,10:40 AM, 11:40 AM,IndiGo,1 hr,NMI–GOX,Nonstop,0 minutes,45 kg CO2e,Avg emissions,"₹3,190",economy
+233,12:10 PM, 1:10 PM,IndiGo,1 hr,GOX–NMI,Nonstop,0 minutes,45 kg CO2e,Avg emissions,"₹4,594",economy
+234,8:00 PM, 9:10 PM,IndiGo,1 hr 10 min,NMI–GOI,Nonstop,0 minutes,43 kg CO2e,-7% emissions,"₹3,741",economy
+235,11:05 AM, 12:35 PM,IndiGo,1 hr 30 min,NMI–GOI,Nonstop,0 minutes,44 kg CO2e,Avg emissions,"₹5,697",economy
+236,5:25 PM, 6:55 PM,IndiGo,1 hr 30 min,GOI–NMI,Nonstop,0 minutes,44 kg CO2e,Avg emissions,"₹4,352",economy
+237,9:45 PM, 11:00 PM,IndiGo,1 hr 15 min,GOI–NMI,Nonstop,0 minutes,43 kg CO2e,-7% emissions,"₹4,352",economy
