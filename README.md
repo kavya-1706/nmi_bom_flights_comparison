@@ -1,3 +1,4 @@
-# Comparison between flights from BOM (Mumbai) and NMI (Navi Mumbai) Airports
+# Comparison between BOM (Mumbai) and NMI (Navi Mumbai) Airports
 <br>
-## Data is web scraped from Google Flights.
+EDA and Price Prediction using ML techniques to figure out which airport is better to take flights from.
+Data is web scraped from Google Flights.
