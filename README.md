@@ -5,5 +5,5 @@ Data is web scraped from Google Flights.
 <br>
 Folder raw_data_web_scraped has .txt files with raw data web scraped from Google Flights.
 <br>
-Folder csv_data has cleaned .csv files of the datasets.
-
+Folder csv_data has cleaned .csv files of the datasets. <br>
+Live link (Streamlit Community Cloud): https://kavya-1706-flight-nmi-bom.streamlit.app/
