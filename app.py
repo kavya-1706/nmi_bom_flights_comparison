@@ -103,7 +103,11 @@ with tab1:
         st.metric(label="Average Ticket Price", value=f"NMI: ₹{df_nmi['Price'].mean():.2f} | BOM: ₹{df_bom['Price'].mean():.2f}")
     with col3:
         st.metric(label="Average CO₂ Emissions", value=f"NMI: {df_nmi['CO2_Emissions'].mean():.1f} kg | BOM: {df_bom['CO2_Emissions'].mean():.1f} kg")
-        
+
+
+
+    
+            
     # Count by connected airports
     st.subheader("Aggregated Flight Volume by Connected Airports")
     
@@ -125,6 +129,7 @@ with tab1:
     fig_comp.add_trace(go.Bar(x=combined_destinations["Airport"], y=combined_destinations["Flights from BOM"], name="Departures from BOM", marker_color="#ff9f1c"))
     fig_comp.update_layout(barmode='group', xaxis_title="Domestic Airports", yaxis_title="Number of flights")
     st.plotly_chart(fig_comp, use_container_width=True)
+    st.caption("Flights connected to/fro BOM are imbalanced, with BLR and DEL having the most flights. Meanwhile, most airports from NMI are equally well connected.")
 
     # Ticket price
     st.subheader("Ticket Price Comparison")
@@ -168,6 +173,7 @@ with tab1:
         yaxis_title="Price (₹)"
     )
     st.plotly_chart(fig, use_container_width=True)
+    st.caption("Both airports offer flights around the same price range, but the mean price range for flights to/fro BOM airport is higher.")
 
     # Airlines count
     st.subheader("Airlines: NMI vs BOM")
@@ -196,6 +202,7 @@ with tab1:
     )
     fig.update_yaxes(range=[0, 50])  
     st.plotly_chart(fig, use_container_width=True)
+    st.caption("Indigo operates the most in both the airports. Akasa Air and AirIndia operates a lot in BOM.")
 
 
     # Cheap vs expensive
@@ -220,6 +227,7 @@ with tab1:
     )
 
     st.plotly_chart(fig, use_container_width=True)
+    st.caption("BOM has more expensive flights.")
 
    # co2
     st.subheader("CO₂ Footprint Breakdown")
@@ -257,7 +265,179 @@ with tab1:
     )
 
     st.plotly_chart(fig_bom_scatter, use_container_width=True)
-        
+
+    st.caption("Airlines & flights operating out of BOM have more CO2 emissions.")
+
+    # Combine both airports
+    combined = pd.concat([
+        df_nmi.assign(Airport="NMI"),
+        df_bom.assign(Airport="BOM")
+    ], ignore_index=True)
+
+    
+
+    st.subheader("Price vs. Flight Duration")
+
+    fig = px.scatter(
+        combined,
+        x="Duration",
+        y="Price",
+        color="Airport",
+        symbol="Stops",
+        hover_data=["Airline", "Layover_Location",
+                    "CO2_Emissions"],
+        labels={
+            "Duration": "Duration (hours)",
+            "Price": "Ticket Price (₹)",
+            "Airport": "Departure Airport",
+            "Stops": "Number of Stops"
+        },
+        title="Are Faster Flights More Expensive? Not really!"
+    )
+    
+
+    st.plotly_chart(fig, use_container_width=True)
+    st.caption("In fact, shorter flights have a bunch of outlier flights which are more expensive than longer flights.")
+
+
+    st.subheader("Cost vs. Environmental Impact")
+
+    fig = px.scatter(
+        combined,
+        x="Price",
+        y="CO2_Emissions",
+        color="Airport",
+        hover_data=[
+            "Airline", "Duration", "Stops",
+            "Emissions_Change"
+        ],
+        labels={
+            "Price": "Ticket Price (₹)",
+            "CO2_Emissions": "CO₂ Emissions (kg)",
+            "Airport": "Departure Airport"
+        },
+        title="Finding Affordable, Lower-Emission Flights"
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+    st.caption("Expensive flights have more CO2 emissions (which makes sense because usually the more expensive flights cover longer distances).")
+
+
+
+    st.subheader("Duration–Emissions Relationship")
+    
+    corr_df = combined[
+            ["Duration", "CO2_Emissions"]
+        ].dropna()
+    
+    if len(corr_df) >= 2:
+            corr = corr_df["Duration"].corr(
+                corr_df["CO2_Emissions"]
+            )
+    
+            st.metric(
+                "Pearson Correlation",
+                f"{corr:.2f}"
+            )
+    
+            if corr > 0.5:
+                st.write(
+                    "The dataset shows a positive relationship "
+                    "between duration and emissions."
+                )
+            elif corr < -0.5:
+                st.write(
+                    "The dataset shows a negative relationship "
+                    "between duration and emissions."
+                )
+            else:
+                st.write(
+                    "The dataset shows a weak "
+                    "linear relationship between these variables- "
+                    "which is surprising! Now we know there are some flights with lower duration but high CO2 Emissions. "
+                    "Hence, the insight from previous graph (Expensive flights have more CO2 emissions) does not depend on the duration/distance."
+                )
+
+
+    st.subheader("Average Layover by Connecting Airport")
+
+    layover_summary = (
+        combined[
+            (combined["Layover_Location"] != "NO_LOC")
+            & combined["Layover_Time"].notna()
+        ]
+        .groupby("Layover_Location")
+        .agg(
+            Average_Layover=("Layover_Time", "mean"),
+            Flight_Count=("Layover_Time", "size")
+        )
+        .reset_index()
+        .sort_values("Average_Layover", ascending=False)
+    )
+
+    fig = px.bar(
+        layover_summary,
+        x="Average_Layover",
+        y="Layover_Location",
+        orientation="h",
+        color="Flight_Count",
+        labels={
+            "Average_Layover": "Average Layover (hours)",
+            "Layover_Location": "Connecting Airport",
+            "Flight_Count": "Number of Flights"
+        },
+        title="Which Connecting Airports Have Longer Layovers?"
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+    
+
+
+    st.subheader("Key Insights")
+            
+    col1, col2, col3 = st.columns(3)
+            
+    with col1:
+                    cheapest = combined.loc[combined["Price"].idxmin()]
+            
+                    st.metric(
+                        "Lowest Observed Fare",
+                        f"₹{cheapest['Price']:,.0f}"
+                    )
+                    st.caption(
+                        f"{cheapest['Airport']} "
+                       
+                    )
+            
+    with col2:
+                    fastest = combined.loc[combined["Duration"].idxmin()]
+            
+                    st.metric(
+                        "Shortest Journey",
+                        f"{fastest['Duration']:.2f} hours"
+                    )
+                    st.caption(
+                        f"{fastest['Airport']} | "
+                        f"₹{fastest['Price']:,.0f}"
+                    )
+            
+    with col3:
+                    greenest = combined.loc[
+                        combined["CO2_Emissions"].idxmin()
+                    ]
+            
+                    st.metric(
+                        "Lowest Observed Emissions",
+                        f"{greenest['CO2_Emissions']:.0f} kg"
+                    )
+                    st.caption(
+                        f"{greenest['Airport']} | "
+                        f"₹{greenest['Price']:,.0f}")
+
+    
+            
         
 with tab2:
     st.header("Datasets (web scraped from Google Flights)")
@@ -301,7 +481,7 @@ st.markdown(
     <div class="footer">
         <p>Made by: Kavya Anil (Email: anilkavya266@gmail.com , GitHub: https://github.com/kavya-1706)</p> 
         <p>GitHub repository: https://github.com/kavya-1706/nmi_bom_flights_comparison</p>
-        <p> Data from Google Flights </p>
+        <p>Data from Google Flights </p>
     </div>
     """,
     unsafe_allow_html=True
